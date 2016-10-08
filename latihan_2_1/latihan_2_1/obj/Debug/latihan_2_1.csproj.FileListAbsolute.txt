@@ -1,0 +1,9 @@
+D:\semester 5\Senin_141110141_FranjayaLim\latihan_2_1\latihan_2_1\bin\Debug\latihan_2_1.exe.config
+D:\semester 5\Senin_141110141_FranjayaLim\latihan_2_1\latihan_2_1\bin\Debug\latihan_2_1.exe
+D:\semester 5\Senin_141110141_FranjayaLim\latihan_2_1\latihan_2_1\bin\Debug\latihan_2_1.pdb
+D:\semester 5\Senin_141110141_FranjayaLim\latihan_2_1\latihan_2_1\obj\Debug\latihan_2_1.csprojResolveAssemblyReference.cache
+D:\semester 5\Senin_141110141_FranjayaLim\latihan_2_1\latihan_2_1\obj\Debug\latihan_2_1.Form1.resources
+D:\semester 5\Senin_141110141_FranjayaLim\latihan_2_1\latihan_2_1\obj\Debug\latihan_2_1.Properties.Resources.resources
+D:\semester 5\Senin_141110141_FranjayaLim\latihan_2_1\latihan_2_1\obj\Debug\latihan_2_1.csproj.GenerateResource.Cache
+D:\semester 5\Senin_141110141_FranjayaLim\latihan_2_1\latihan_2_1\obj\Debug\latihan_2_1.exe
+D:\semester 5\Senin_141110141_FranjayaLim\latihan_2_1\latihan_2_1\obj\Debug\latihan_2_1.pdb
