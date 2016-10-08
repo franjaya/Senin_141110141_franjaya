@@ -84,18 +84,8 @@ namespace latihan_2_1
         
         private void domainUpDown2_SelectedItemChanged(object sender, EventArgs e)
         {
-            for (int a = 0; a < 12; a++)
-            {
-                if (domainUpDown2.SelectedItem == blan[a])
-                {
-                    domainUpDown1.Items.Clear();
-                    for (int b = 1; b <= tanggalak[a]; b++)
-                        domainUpDown1.Items.Add(b);
-
-                    domainUpDown1.SelectedItem = 1;
-                    break;
-                }
-            }
+           
+            
         }
     }
 }
