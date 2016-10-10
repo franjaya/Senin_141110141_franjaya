@@ -17,7 +17,7 @@ namespace latihan_2_1
             InitializeComponent();
             DateTime mulai = new DateTime(2016, 1, 1);
             DateTime akhir = new DateTime(2016, 12, 31);
-            while (mulai < akhir)
+            while (mulai <= akhir)
             {
                 if (mulai.DayOfWeek == DayOfWeek.Saturday)
                 {
@@ -48,17 +48,17 @@ namespace latihan_2_1
         {
             int buln = domainUpDown2.SelectedIndex + 1;
             int tgl = domainUpDown1.SelectedIndex + 1;
-
-
-            monthCalendar1.AddAnnuallyBoldedDate(new DateTime(2016, buln,tgl));
+            monthCalendar1.AddAnnuallyBoldedDate(new DateTime(2016, buln, tgl));
             monthCalendar1.UpdateBoldedDates();
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            int buln = domainUpDown2.SelectedIndex + 1;
+            int tgl = domainUpDown1.SelectedIndex + 1;
 
-            monthCalendar1.RemoveAllAnnuallyBoldedDates();
+            monthCalendar1.RemoveAnnuallyBoldedDate(new DateTime(2016, buln, tgl));
             monthCalendar1.UpdateBoldedDates();
 
 
