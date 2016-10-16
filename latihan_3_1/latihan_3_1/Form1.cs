@@ -20,66 +20,55 @@ namespace latihan_3_1
         
         private void button1_Click(object sender, EventArgs e)
         {
-            if (button1.FlatStyle == FlatStyle.Standard)
-            {
-                button1.FlatStyle = FlatStyle.Popup;
+            checkButtonStyle(button1);
 
 
-            }
-            else
-            {
-                button1.FlatStyle = FlatStyle.Standard;
-
-            }
-            if (button1.FlatStyle == FlatStyle.Popup)
-            {
-                richTextBox1.Font = new Font(richTextBox1.Font, richTextBox1.Font.Style | FontStyle.Bold);
-
-            }
-         
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (button2.FlatStyle == FlatStyle.Standard)
-            {
-                button2.FlatStyle = FlatStyle.Popup;
+            checkButtonStyle(button2);
 
-
-            }
-            else
-            {
-                button2.FlatStyle = FlatStyle.Standard;
-
-            }
-            if (button2.FlatStyle == FlatStyle.Popup)
-            {
-                richTextBox1.Font = new Font(richTextBox1.Font, richTextBox1.Font.Style | FontStyle.Italic);
-
-            }
-            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (button3.FlatStyle == FlatStyle.Standard)
+            checkButtonStyle(button3);
+
+
+        }
+        public void checkFontStyle()
+        {
+            richTextBox1.Font = new Font(this.Font, FontStyle.Regular);
+            if (button1.FlatStyle == FlatStyle.Popup)
             {
-                button3.FlatStyle = FlatStyle.Popup;
-
-
+                richTextBox1.Font = new Font(this.Font, richTextBox1.Font.Style | FontStyle.Bold);
             }
-            else
+            if (button2.FlatStyle == FlatStyle.Popup)
             {
-                button3.FlatStyle = FlatStyle.Standard;
-
+                richTextBox1.Font = new Font(this.Font, richTextBox1.Font.Style | FontStyle.Italic);
             }
             if (button3.FlatStyle == FlatStyle.Popup)
             {
-                richTextBox1.Font = new Font(richTextBox1.Font, richTextBox1.Font.Style | FontStyle.Underline);
-
+                richTextBox1.Font = new Font(this.Font, richTextBox1.Font.Style | FontStyle.Underline);
             }
-           
+
         }
+
+        public void checkButtonStyle(Button btn)
+        {
+            if (btn.FlatStyle == FlatStyle.Standard)
+            {
+                btn.FlatStyle = FlatStyle.Popup;
+                checkFontStyle();
+            }
+            else
+            {
+                btn.FlatStyle = FlatStyle.Standard;
+                checkFontStyle();
+            }
+        }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
