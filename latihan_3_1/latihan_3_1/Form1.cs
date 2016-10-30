@@ -20,59 +20,34 @@ namespace latihan_3_1
         
         private void button1_Click(object sender, EventArgs e)
         {
-            checkButtonStyle(button1);
-
+            richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, richTextBox1.SelectionFont.Style ^ FontStyle.Bold);
+            richTextBox1.Focus();
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            checkButtonStyle(button2);
+            richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, richTextBox1.SelectionFont.Style ^ FontStyle.Italic);
+            richTextBox1.Focus();
+
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            checkButtonStyle(button3);
+            richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, richTextBox1.SelectionFont.Style ^ FontStyle.Underline);
+            richTextBox1.Focus();
 
 
         }
-        public void checkFontStyle()
-        {
-            richTextBox1.Font = new Font(this.Font, FontStyle.Regular);
-            if (button1.FlatStyle == FlatStyle.Popup)
-            {
-                richTextBox1.Font = new Font(this.Font, richTextBox1.Font.Style | FontStyle.Bold);
-            }
-            if (button2.FlatStyle == FlatStyle.Popup)
-            {
-                richTextBox1.Font = new Font(this.Font, richTextBox1.Font.Style | FontStyle.Italic);
-            }
-            if (button3.FlatStyle == FlatStyle.Popup)
-            {
-                richTextBox1.Font = new Font(this.Font, richTextBox1.Font.Style | FontStyle.Underline);
-            }
-
-        }
-
-        public void checkButtonStyle(Button btn)
-        {
-            if (btn.FlatStyle == FlatStyle.Standard)
-            {
-                btn.FlatStyle = FlatStyle.Popup;
-                checkFontStyle();
-            }
-            else
-            {
-                btn.FlatStyle = FlatStyle.Standard;
-                checkFontStyle();
-            }
-        }
+        
 
 
         private void Form1_Load(object sender, EventArgs e)
         {
             
+
+
 
             comboBox1.Items.Add("8");
             comboBox1.Items.Add("9");
@@ -99,33 +74,17 @@ namespace latihan_3_1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            richTextBox1.Font = new Font(richTextBox1.Font.FontFamily, Convert.ToInt32(comboBox1.SelectedItem), richTextBox1.Font.Style);
+            richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont.FontFamily, Convert.ToInt32(comboBox1.SelectedItem), richTextBox1.Font.Style);
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            richTextBox1.Font = new Font(comboBox2.Text, richTextBox1.Font.Size);
+            richTextBox1.SelectionFont = new Font(comboBox2.SelectedItem.ToString(), richTextBox1.SelectionFont.SizeInPoints);
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (button1.FlatStyle == FlatStyle.Standard)
-            {
-                richTextBox1.Font = new Font(richTextBox1.Font, FontStyle.Regular);
+        
 
-            }
-            if (button2.FlatStyle == FlatStyle.Standard)
-            {
-                richTextBox1.Font = new Font(richTextBox1.Font, FontStyle.Regular);
-
-            }
-            if (button3.FlatStyle == FlatStyle.Standard)
-            {
-                richTextBox1.Font = new Font(richTextBox1.Font, FontStyle.Regular);
-
-            }
-
-        }
+        
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -134,14 +93,22 @@ namespace latihan_3_1
 
         private void button5_Click_1(object sender, EventArgs e)
         {
+            
             DialogResult warna = colorDialog1.ShowDialog();
+            
             if(warna==DialogResult.OK)
             {
-                richTextBox1.ForeColor = colorDialog1.Color;
+                richTextBox1.SelectionColor = colorDialog1.Color;
+                
+               
             }
+            
         }
 
-        
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 

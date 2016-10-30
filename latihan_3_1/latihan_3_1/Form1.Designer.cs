@@ -34,7 +34,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -84,7 +83,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(235, 2);
+            this.comboBox2.Location = new System.Drawing.Point(191, 2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(111, 21);
             this.comboBox2.TabIndex = 4;
@@ -97,25 +96,15 @@
             this.richTextBox1.Size = new System.Drawing.Size(551, 357);
             this.richTextBox1.TabIndex = 6;
             this.richTextBox1.Text = "";
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(191, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(38, 23);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "reset";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(352, 2);
+            this.button5.Location = new System.Drawing.Point(308, 1);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 8;
-            this.button5.Text = "pilih warna";
+            this.button5.Text = "font size";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
@@ -125,7 +114,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(596, 443);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.button3);
@@ -147,7 +135,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Button button5;
     }
