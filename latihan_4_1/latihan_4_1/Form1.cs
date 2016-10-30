@@ -19,8 +19,10 @@ namespace latihan_4_1
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!File.Exists("Text.txt"))
-                File.Create("D:\\test.rtf");
+
+            this.Hide();
+            Form1 baru = new Form1();
+            baru.ShowDialog();
         }
        
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
