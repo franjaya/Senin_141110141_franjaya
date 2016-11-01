@@ -20,9 +20,10 @@ namespace latihan_4_1
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            this.Hide();
-            Form1 baru = new Form1();
-            baru.ShowDialog();
+
+            Form1 f = new Form1();
+            f.Show();
+           
         }
        
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -32,7 +33,7 @@ namespace latihan_4_1
                 if(openFileDialog1.ShowDialog()==DialogResult.OK)
                 {
                     richTextBox1.Text = File.ReadAllText(openFileDialog1.FileName);
-
+                   
                 }
 
             }
