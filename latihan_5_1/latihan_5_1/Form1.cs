@@ -66,11 +66,13 @@ namespace latihan_5_1
             if (e.Node.Text == "Background color")
             {
                 button1.Visible = true;
+                label1.Visible = true;
 
             }
             else
             {
                 button1.Visible = false;
+                label1.Visible = false;
             }
 
 
@@ -84,6 +86,7 @@ namespace latihan_5_1
             {
                 richTextBox1.BackColor = colorDialog1.Color;
                 button1.Visible = false;
+                label1.Visible = false;
                 treeView1.Visible = false;
             }
            
