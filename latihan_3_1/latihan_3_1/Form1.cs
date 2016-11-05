@@ -74,6 +74,7 @@ namespace latihan_3_1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
             richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont.FontFamily, Convert.ToInt32(comboBox1.SelectedItem), richTextBox1.Font.Style);
         }
 
