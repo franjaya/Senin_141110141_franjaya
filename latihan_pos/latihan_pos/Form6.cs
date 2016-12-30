@@ -25,6 +25,8 @@ namespace latihan_pos
             frm1.TopMost = true;
             frm1.Activate();
             frm1.Show();
+            Form6 frm6 = new Form6();
+            frm6.Hide();
            
             string constring = "datasource=localhost;port=3306;username=root;password=rush1234";
             string query = "insert into login.logintable(username,`password`)values(" + this.textBox1.Text + "," + this.textBox2.Text+ ");";

@@ -21,22 +21,22 @@ namespace latihan_pos
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
             Form6 frm6 = new Form6();
             frm6.Focus();
             frm6.TopMost = true;
             frm6.Activate();
             frm6.Show();
 
-           
-          
-       
 
-           
-    
+
+
+
+
+
         }
 
-       
+
 
         private void barangToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -115,6 +115,8 @@ namespace latihan_pos
         {
             Form2 frm2 = new Form2();
             frm2.Show();
+            frm2.TopMost = true;
+            frm2.Activate();
             Form1 frm1 = new Form1();
             frm1.Hide();
         }
@@ -123,6 +125,8 @@ namespace latihan_pos
         {
             Form3 frm3 = new Form3();
             frm3.Show();
+            frm3.TopMost = true;
+            frm3.Activate();
             Form1 frm1 = new Form1();
             frm1.Hide();
             Form2 frm2 = new Form2();
@@ -139,6 +143,8 @@ namespace latihan_pos
             frm3.Hide();
             Form4 frm4 = new Form4();
             frm4.Show();
+            frm4.TopMost = true;
+            frm4.Activate();
         }
 
         private void beliToolStripMenuItem_Click(object sender, EventArgs e)
@@ -153,6 +159,8 @@ namespace latihan_pos
             frm4.Hide();
             Form5 frm5 = new Form5();
             frm5.Show();
+            frm5.TopMost = true;
+            frm5.Activate();
         }
     }
 }
